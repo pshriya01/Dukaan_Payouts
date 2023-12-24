@@ -1,5 +1,6 @@
 import { Flex,Box,Text } from '@chakra-ui/react'
 import React from 'react'
+import logo from '../logo/Image.png'
 
 const Navbar = () => {
   return (
@@ -15,12 +16,12 @@ const Navbar = () => {
       h="100vh"
     >
       <Flex w="192px" alignItems="center" gap="12px">
-        {/* <Box
+        <Box
           w="39px"
           h="39px"
           borderRadius="4px"
-          bg={`url(${company_logo})`}
-        ></Box> */}
+          bg={`url(${logo})`}
+        ></Box>
 
         <Box alignSelf="stretch" w="108px">
           <Text

@@ -16,7 +16,7 @@ import {
   import React from "react";
   
   export function TableShow({ method }) {
-    const TableArr = new Array(10).fill(0);
+    const TableArr = new Array(7).fill(0);
   
     return (
       <Flex
@@ -200,7 +200,7 @@ import {
                           </Flex>
                         )}
                       </Td>
-                      <Td>5455456541512</Td>
+                      <Td>131634495747</Td>
                       {method === "payout" && <Td>₹10,125.00</Td>}
                       {method === "refund" && <Td>Today, 08:45 PM</Td>}
                       <Td>₹1,125.00</Td>
