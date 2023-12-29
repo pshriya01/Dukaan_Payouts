@@ -16,7 +16,7 @@ function App() {
           }
         `}
       </style> */}
-    <div style={{width:"224px",backgroundColor:"#1E2640",height:"100vh",justifyContent:"space-between",border:"1px solid blue"}}>
+    <div style={{width:"224px",backgroundColor:"#1E2640",height:"100vh",justifyContent:"space-between"}}>
     <Navbar />
     </div>
      <div style={{width:"calc(100% - 224px)",backgroundColor:"#FAFAFA"}}>
