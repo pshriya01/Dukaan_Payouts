@@ -22,6 +22,7 @@ backgroundColor={"var(--Black-100, #FFF)"}
         <Text
           color={"#1A181E"}
           // fontFamily={"Galano Grotesque"}
+          // fontFamily={"Darker Grotesque"}
           fontSize={"20px"}
           fontStyle={"normal"}
           fontWeight={"500"}

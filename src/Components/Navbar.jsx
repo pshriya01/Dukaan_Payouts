@@ -14,13 +14,23 @@ const Navbar = () => {
       flex="1 1 0"
       bg="#1E2640"
       h="100vh"
+      className='navbar'
     >
-      <Flex w="192px" alignItems="center" gap="12px">
+      <style>{
+              `@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&family=Inter:wght@400&display=swap');
+              .navbar {
+                font-family: 'Inter', sans-serif;
+              }
+        `}
+  
+</style>
+      <Flex w="192px" alignItems="center"  gap="12px">
         <Box
           w="39px"
           h="39px"
           borderRadius="4px"
           bg={`url(${logo})`}
+         
         ></Box>
 
         <Box alignSelf="stretch" w="108px">
@@ -60,12 +70,13 @@ const Navbar = () => {
         </svg>
       </Flex>
 
-      <Box mt="8px" color="white" h="80%">
+      <Box mt="8px"  color="white" h="82.5%">
         <Flex
           w="208px"
           p="8px 16px"
           alignItems="flex-start"
           gap="12px"
+          fontFamily={""}
           fontSize="14px"
           fontStyle="normal"
           fontWeight="500"
