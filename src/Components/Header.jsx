@@ -103,23 +103,20 @@ backgroundColor={"#F2F2F2"}
   </defs>
 </svg>
   </Box>
-  <Box
-  color={"#808080"}
-  fontSize={"15px"}
-  fontStyle={"normal"}
-  fontWeight={"400"}
-  lineHeight={"22px"}
+  <input
+  style={{color:"#808080",backgroundColor:"#F2F2F2",fontSize:"15px",fontStyle:"normal",fontWeight:"400",lineHeight:"22px",width:"100%",border:"none"}}
+  // color={"#808080"}
+  // fontSize={"15px"}
+  // fontStyle={"normal"}
+  // fontWeight={"400"}
+  // lineHeight={"22px"}
+  placeholder="Search features, tutorials, etc."
   >
-    <Text>
+    {/* <Text>
     Search features, tutorials, etc.
-    </Text>
-  </Box>
-{/* <InputGroup>
-    <InputLeftElement >
-      
-    </InputLeftElement>
-    <Input placeholder='Search features, tutorials, etc.' />
-  </InputGroup> */}
+    </Text> */}
+  </input>
+
 
 </Flex>
       <Flex

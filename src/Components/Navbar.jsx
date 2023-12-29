@@ -19,7 +19,7 @@ const Navbar = () => {
       <style>{
               `@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&family=Inter:wght@400&display=swap');
               .navbar {
-                font-family: 'Inter', sans-serif;
+                font-family: 'Inter';
               }
         `}
   
@@ -70,7 +70,7 @@ const Navbar = () => {
         </svg>
       </Flex>
 
-      <Box mt="8px"  color="white" h="82.5%">
+      <Box mt="8px"  color="white"  h="92.2%">
         <Flex
           w="208px"
           p="8px 16px"
