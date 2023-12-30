@@ -150,13 +150,13 @@ import {
                   lineHeight="20px"
                 >
                   <Tr>
-                    <Th>Order ID</Th>
-                    <Th>Status</Th>
-                    <Th>Transaction ID</Th>
-                    {method === "refund" && <Th>Refund Date</Th>}
-                    <Th>Order Amount</Th>
-                    {method === "payout" && <Th>Transaction fees</Th>}
-                    {method === "payout" && <Th>Total</Th>}
+                    <Th textTransform={"capitalize"}>Order ID</Th>
+                    <Th  textTransform={"capitalize"}>Status</Th>
+                    <Th  textTransform={"capitalize"}>Transaction ID</Th>
+                    {method === "refund" && <Th textTransform={"capitalize"}>Refund Date</Th>}
+                    <Th textTransform={"capitalize"}>Order Amount</Th>
+                    {method === "payout" && <Th textTransform={"capitalize"}>Transaction fees</Th>}
+                    {method === "payout" && <Th textTransform={"capitalize"}>Total</Th>}
                   </Tr>
                 </Thead>
                 <Tbody
@@ -186,7 +186,7 @@ import {
                           </Flex>
                         )}
                         {ind % 2 !== 0 && (
-                          <Flex alignItems="center" gap="5px">
+                          <Flex alignItems="flex-end" gap="5px">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="11"
@@ -196,16 +196,16 @@ import {
                             >
                               <circle cx="5.66406" cy="5" r="5" fill="#999999" />
                             </svg>
-                            Processing
-                          </Flex>
-                        )}
-                      </Td>
-                      <Td>131634495747</Td>
-                      {method === "payout" && <Td>₹10,125.00</Td>}
-                      {method === "refund" && <Td>Today, 08:45 PM</Td>}
-                      <Td>₹1,125.00</Td>
-                      {method === "payout" && <Td>₹9,312</Td>}
-                    </Tr>
+                           Processing
+                        </Flex>
+                      )}
+                   </Td>
+                     <Td>131634495747</Td>
+                      {method === "payout" && <Td paddingLeft={"48px"} >₹10,125.00</Td>}
+                     {method === "refund" && <Td >Today, 08:45 PM</Td>}
+                    <Td paddingLeft={method==="payout"?"69px":"55px"} >₹1,125.00</Td>
+                     {method === "payout" && <Td marginLeft={"50px"} >₹9,312</Td>}
+                  </Tr>
                   ))}
                 </Tbody>
               </Table>
